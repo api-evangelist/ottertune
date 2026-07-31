@@ -1,7 +1,26 @@
 aid: ottertune
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ottertune.png
 name: OtterTune
-description: 'OtterTune is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: big-data. This profile is a lead awaiting the enrichment pipeline.'
+description: 'OtterTune was a database optimization ("on autopilot") start-up spun out of
+  Carnegie Mellon University''s database research group, operating from roughly 2020 to 2024.
+  It applied machine learning to automatically tune the configuration knobs of PostgreSQL and
+  MySQL databases (including managed instances such as Amazon RDS and Aurora) to improve
+  performance and reduce cost. The company shut down in 2024 and its homepage now states the
+  company is defunct. Its public GitHub organization remains available with infrastructure
+  and agent tooling (ot-agent, Helm chart, CloudFormation/Terraform templates). This API
+  Evangelist profile was added as a portfolio-company lead of Accel and captures the residual
+  public footprint of a now-inactive company rather than a live API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/ottertune/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +28,19 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Big Data
+- Database
+- Database Optimization
+- Machine Learning
+- PostgreSQL
+- MySQL
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ottertune-domain-security.yml
 - type: Website
   url: https://ottertune.com/
+- type: GitHubOrganization
+  url: https://github.com/ottertune
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

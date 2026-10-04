@@ -48,7 +48,7 @@ tags:
 - Big Data
 - Database
 - Database Optimization
-- Machine-Learning
+- Machine Learning
 - PostgreSQL
 - MySQL
 - Defunct
@@ -61,6 +61,7 @@ tags_raw:
 - PostgreSQL
 - MySQL
 - Defunct
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
